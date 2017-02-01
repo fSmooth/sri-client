@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -26,6 +25,8 @@ public class Main {
 
 			// cuestionario
 			answerQuestions(in, out);
+			
+			socket.close();
 
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
@@ -34,6 +35,7 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 
 	}
 
